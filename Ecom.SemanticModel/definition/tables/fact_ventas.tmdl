@@ -1,0 +1,93 @@
+table fact_ventas
+	lineageTag: bb77feaf-f3a3-5b5f-907c-772b854a5908
+
+	column pedido_id
+		dataType: string
+		lineageTag: 0a7f7cc1-9393-5500-8c4d-f84bb8f4bf42
+		summarizeBy: none
+		sourceColumn: pedido_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 48510083-0b56-53a1-b27a-140fffb0aa8f
+		summarizeBy: none
+		sourceColumn: fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_id
+		dataType: string
+		lineageTag: 5314f7d7-0ae2-5b3c-8a8c-d8c8fe2656a7
+		summarizeBy: none
+		sourceColumn: cliente_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column producto_id
+		dataType: string
+		lineageTag: 80a5ff5f-b5ed-5701-be73-54923f189141
+		summarizeBy: none
+		sourceColumn: producto_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column canal
+		dataType: string
+		lineageTag: a944d21c-4091-5367-99a5-9e0692e4eaab
+		summarizeBy: none
+		sourceColumn: canal
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado
+		dataType: string
+		lineageTag: 20443774-095a-5f68-9f1c-3217e009d7a1
+		summarizeBy: none
+		sourceColumn: estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column cantidad
+		dataType: int64
+		lineageTag: a455fc08-a1e9-5597-a4f2-0eb0b940b825
+		summarizeBy: sum
+		sourceColumn: cantidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column descuento_pct
+		dataType: double
+		lineageTag: 79d16a43-85ab-5791-8da2-6528a0d00988
+		summarizeBy: none
+		sourceColumn: descuento_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column ingreso
+		dataType: double
+		lineageTag: 34e835cd-18b1-5d45-b294-24178cd1c423
+		summarizeBy: sum
+		sourceColumn: ingreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column costo
+		dataType: double
+		lineageTag: 4e2f4336-8205-5811-9e82-229b7313a5fa
+		summarizeBy: sum
+		sourceColumn: costo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_ventas = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(DataPath & "fact_ventas.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"pedido_id", type text}, {"fecha", type date}, {"cliente_id", type text}, {"producto_id", type text}, {"canal", type text}, {"estado", type text}, {"cantidad", Int64.Type}, {"descuento_pct", type number}, {"ingreso", type number}, {"costo", type number}}, "en-US")
+				in
+				    Tipos

@@ -1,0 +1,47 @@
+table dim_calendario
+	lineageTag: 0b1dbbbe-8333-5435-b81a-ba3f51973041
+	dataCategory: Time
+
+	column fecha
+		dataType: dateTime
+		isKey
+		formatString: yyyy-mm-dd
+		lineageTag: 7652fdac-e306-592c-a208-60be6e528dd5
+		summarizeBy: none
+		sourceColumn: fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: int64
+		lineageTag: 1e9aec3f-9d25-5290-a93f-ee28a05b92f9
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column trimestre
+		dataType: string
+		lineageTag: af1f12e9-aeb5-598f-9700-d0dfd38830aa
+		summarizeBy: none
+		sourceColumn: trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column periodo
+		dataType: string
+		lineageTag: db4ee512-52f3-5b65-973d-7c99df22deed
+		summarizeBy: none
+		sourceColumn: periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_calendario = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(DataPath & "dim_calendario.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"fecha", type date}, {"anio", Int64.Type}, {"trimestre", type text}, {"periodo", type text}}, "en-US")
+				in
+				    Tipos

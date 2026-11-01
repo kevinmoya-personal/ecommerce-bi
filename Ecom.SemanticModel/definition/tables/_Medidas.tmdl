@@ -1,0 +1,109 @@
+table _Medidas
+	lineageTag: 5908243f-7378-5439-8aee-f25bfdcaebd4
+
+	/// Ingresos de pedidos completados.
+	measure Ventas = CALCULATE ( SUM ( fact_ventas[ingreso] ), fact_ventas[estado] = "Completado" )
+		formatString: $#,##0
+		displayFolder: Ventas
+		lineageTag: 2c31c267-8578-50fa-9a8f-46d6a815d266
+
+	/// Pedidos completados distintos.
+	measure Pedidos = CALCULATE ( DISTINCTCOUNT ( fact_ventas[pedido_id] ), fact_ventas[estado] = "Completado" )
+		formatString: #,##0
+		displayFolder: Ventas
+		lineageTag: 664d787b-75ca-5ed6-a051-38553ee0bf0c
+
+	/// Unidades vendidas en pedidos completados.
+	measure Unidades = CALCULATE ( SUM ( fact_ventas[cantidad] ), fact_ventas[estado] = "Completado" )
+		formatString: #,##0
+		displayFolder: Ventas
+		lineageTag: 68c2d7e2-611c-51c7-a0af-96df38a2a8bd
+
+	/// Ventas dividido por pedidos.
+	measure 'Ticket Promedio' = DIVIDE ( [Ventas], [Pedidos] )
+		formatString: $#,##0
+		displayFolder: Ventas
+		lineageTag: ed4346d8-fb3a-5d83-8408-46ea2e66157f
+
+	/// Ventas menos costo de los pedidos completados.
+	measure 'Margen Bruto' = [Ventas] - CALCULATE ( SUM ( fact_ventas[costo] ), fact_ventas[estado] = "Completado" )
+		formatString: $#,##0
+		displayFolder: Rentabilidad
+		lineageTag: 06964ee8-0eaa-51d2-9324-c03a3830427e
+
+	/// Margen bruto sobre ventas.
+	measure 'Margen %' = DIVIDE ( [Margen Bruto], [Ventas] )
+		formatString: 0.0%
+		displayFolder: Rentabilidad
+		lineageTag: f0bad19f-ea37-5fba-b1e3-21790cd24485
+
+	/// Ventas del mismo periodo del año anterior.
+	measure 'Ventas Año Anterior' = CALCULATE ( [Ventas], SAMEPERIODLASTYEAR ( dim_calendario[fecha] ) )
+		formatString: $#,##0
+		displayFolder: Ventas
+		lineageTag: e86678c8-dffa-5c98-875d-cb5d0ed5841c
+
+	/// Último año del contexto contra el mismo periodo del año anterior.
+	measure 'Var % Anual' =
+			VAR a = MAX ( dim_calendario[anio] )
+			VAR fechas = CALCULATETABLE ( VALUES ( dim_calendario[fecha] ), dim_calendario[anio] = a )
+			VAR actual = CALCULATE ( [Ventas], fechas )
+			VAR previo = CALCULATE ( [Ventas], SAMEPERIODLASTYEAR ( fechas ) )
+			RETURN DIVIDE ( actual - previo, previo )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Ventas
+		lineageTag: 709394c2-ed8d-54c2-a889-856bfb29d212
+
+	/// Pedidos devueltos sobre pedidos completados y devueltos.
+	measure 'Tasa de Devolución' =
+			VAR d = CALCULATE ( DISTINCTCOUNT ( fact_ventas[pedido_id] ), fact_ventas[estado] = "Devuelto" )
+			RETURN DIVIDE ( d, d + [Pedidos] )
+		formatString: 0.0%
+		displayFolder: Ventas
+		lineageTag: 046e8841-73df-5ad2-8778-b2aee93429da
+
+	/// Clientes con al menos un pedido completado.
+	measure 'Clientes Activos' = CALCULATE ( DISTINCTCOUNT ( fact_ventas[cliente_id] ), fact_ventas[estado] = "Completado" )
+		formatString: #,##0
+		displayFolder: Clientes
+		lineageTag: c0371bb8-949c-5ae3-a401-a63846cf4880
+
+	/// Clientes con dos o más pedidos completados en el contexto.
+	measure 'Clientes Recurrentes' = COUNTROWS ( FILTER ( VALUES ( dim_cliente[cliente_id] ), [Pedidos] >= 2 ) )
+		formatString: #,##0
+		displayFolder: Clientes
+		lineageTag: 044ab0c3-4cab-5a5d-91db-009b2b3db257
+
+	/// Clientes recurrentes sobre clientes activos.
+	measure 'Tasa de Recompra' = DIVIDE ( [Clientes Recurrentes], [Clientes Activos] )
+		formatString: 0.0%
+		displayFolder: Clientes
+		lineageTag: eaf7ce3c-d952-52fc-8eb6-1857e086ff32
+
+	/// Usuarios en cada etapa del embudo.
+	measure Usuarios = SUM ( fact_embudo[usuarios] )
+		formatString: #,##0
+		displayFolder: Embudo
+		lineageTag: 50ca5379-c748-5cac-adf4-4197bef236d0
+
+	/// Compras sobre visitas.
+	measure 'Tasa de Conversión' =
+			DIVIDE (
+			    CALCULATE ( [Usuarios], fact_embudo[etapa] = "Compra" ),
+			    CALCULATE ( [Usuarios], fact_embudo[etapa] = "Visitas" )
+			)
+		formatString: 0.00%
+		displayFolder: Embudo
+		lineageTag: 1dbef488-8dd1-5d6b-8526-309415bb912a
+
+	column x
+		dataType: int64
+		isHidden
+		lineageTag: f9cf0b5f-7407-50b9-9b97-cfbd42213b11
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [x]
+
+	partition _Medidas = calculated
+		mode: import
+		source = ROW("x", 0)

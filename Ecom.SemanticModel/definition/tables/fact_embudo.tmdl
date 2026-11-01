@@ -1,0 +1,53 @@
+table fact_embudo
+	lineageTag: 7cc768e5-376e-5734-8f59-f0c4a618f233
+
+	column mes
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 9f4e7072-8ef2-5d75-b65f-3d3eedb4fa8c
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column canal
+		dataType: string
+		lineageTag: 2c89a61d-43ae-52a6-9b60-61db40ef07ee
+		summarizeBy: none
+		sourceColumn: canal
+
+		annotation SummarizationSetBy = Automatic
+
+	column etapa
+		dataType: string
+		lineageTag: 6684e132-79a6-5019-bf8a-895bfcae18df
+		summarizeBy: none
+		sourceColumn: etapa
+
+		annotation SummarizationSetBy = Automatic
+
+	column orden_etapa
+		dataType: int64
+		lineageTag: 01f333ff-4adb-53cc-83a6-954938372f9e
+		summarizeBy: none
+		sourceColumn: orden_etapa
+
+		annotation SummarizationSetBy = Automatic
+
+	column usuarios
+		dataType: int64
+		lineageTag: 8ce5aaaf-0e86-5467-a35e-06200b949ad7
+		summarizeBy: sum
+		sourceColumn: usuarios
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_embudo = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(DataPath & "fact_embudo.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"mes", type date}, {"canal", type text}, {"etapa", type text}, {"orden_etapa", Int64.Type}, {"usuarios", Int64.Type}}, "en-US")
+				in
+				    Tipos

@@ -1,0 +1,21 @@
+table dim_canal
+	lineageTag: d067b974-e2b3-5c79-aa80-b6c9b47c2c5f
+
+	column canal
+		dataType: string
+		isKey
+		lineageTag: b88564b0-33f1-5751-9de8-71a534be9774
+		summarizeBy: none
+		sourceColumn: canal
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_canal = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(DataPath & "dim_canal.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"canal", type text}}, "en-US")
+				in
+				    Tipos

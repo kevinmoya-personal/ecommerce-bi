@@ -1,0 +1,826 @@
+mes,canal,etapa,orden_etapa,usuarios
+2024-01-01,Búsqueda Paga,Visitas,1,3720
+2024-01-01,Búsqueda Paga,Vista de producto,2,1955
+2024-01-01,Búsqueda Paga,Carrito,3,490
+2024-01-01,Búsqueda Paga,Checkout,4,288
+2024-01-01,Búsqueda Paga,Compra,5,88
+2024-01-01,Email,Visitas,1,1236
+2024-01-01,Email,Vista de producto,2,646
+2024-01-01,Email,Carrito,3,161
+2024-01-01,Email,Checkout,4,94
+2024-01-01,Email,Compra,5,61
+2024-01-01,Orgánico,Visitas,1,4559
+2024-01-01,Orgánico,Vista de producto,2,2425
+2024-01-01,Orgánico,Carrito,3,572
+2024-01-01,Orgánico,Checkout,4,344
+2024-01-01,Orgánico,Compra,5,129
+2024-01-01,Pago Social,Visitas,1,7225
+2024-01-01,Pago Social,Vista de producto,2,3653
+2024-01-01,Pago Social,Carrito,3,912
+2024-01-01,Pago Social,Checkout,4,548
+2024-01-01,Pago Social,Compra,5,122
+2024-01-01,Referidos,Visitas,1,1156
+2024-01-01,Referidos,Vista de producto,2,595
+2024-01-01,Referidos,Carrito,3,146
+2024-01-01,Referidos,Checkout,4,83
+2024-01-01,Referidos,Compra,5,46
+2024-02-01,Búsqueda Paga,Visitas,1,3786
+2024-02-01,Búsqueda Paga,Vista de producto,2,1992
+2024-02-01,Búsqueda Paga,Carrito,3,466
+2024-02-01,Búsqueda Paga,Checkout,4,274
+2024-02-01,Búsqueda Paga,Compra,5,88
+2024-02-01,Email,Visitas,1,1013
+2024-02-01,Email,Vista de producto,2,511
+2024-02-01,Email,Carrito,3,121
+2024-02-01,Email,Checkout,4,70
+2024-02-01,Email,Compra,5,51
+2024-02-01,Orgánico,Visitas,1,4605
+2024-02-01,Orgánico,Vista de producto,2,2395
+2024-02-01,Orgánico,Carrito,3,566
+2024-02-01,Orgánico,Checkout,4,337
+2024-02-01,Orgánico,Compra,5,121
+2024-02-01,Pago Social,Visitas,1,5966
+2024-02-01,Pago Social,Vista de producto,2,3123
+2024-02-01,Pago Social,Carrito,3,756
+2024-02-01,Pago Social,Checkout,4,425
+2024-02-01,Pago Social,Compra,5,97
+2024-02-01,Referidos,Visitas,1,857
+2024-02-01,Referidos,Vista de producto,2,456
+2024-02-01,Referidos,Carrito,3,112
+2024-02-01,Referidos,Checkout,4,65
+2024-02-01,Referidos,Compra,5,36
+2024-03-01,Búsqueda Paga,Visitas,1,4357
+2024-03-01,Búsqueda Paga,Vista de producto,2,2270
+2024-03-01,Búsqueda Paga,Carrito,3,522
+2024-03-01,Búsqueda Paga,Checkout,4,306
+2024-03-01,Búsqueda Paga,Compra,5,108
+2024-03-01,Email,Visitas,1,1152
+2024-03-01,Email,Vista de producto,2,592
+2024-03-01,Email,Carrito,3,141
+2024-03-01,Email,Checkout,4,85
+2024-03-01,Email,Compra,5,61
+2024-03-01,Orgánico,Visitas,1,5637
+2024-03-01,Orgánico,Vista de producto,2,2850
+2024-03-01,Orgánico,Carrito,3,699
+2024-03-01,Orgánico,Checkout,4,395
+2024-03-01,Orgánico,Compra,5,167
+2024-03-01,Pago Social,Visitas,1,7796
+2024-03-01,Pago Social,Vista de producto,2,4159
+2024-03-01,Pago Social,Carrito,3,1043
+2024-03-01,Pago Social,Checkout,4,607
+2024-03-01,Pago Social,Compra,5,123
+2024-03-01,Referidos,Visitas,1,1730
+2024-03-01,Referidos,Vista de producto,2,896
+2024-03-01,Referidos,Carrito,3,212
+2024-03-01,Referidos,Checkout,4,118
+2024-03-01,Referidos,Compra,5,66
+2024-04-01,Búsqueda Paga,Visitas,1,4875
+2024-04-01,Búsqueda Paga,Vista de producto,2,2591
+2024-04-01,Búsqueda Paga,Carrito,3,644
+2024-04-01,Búsqueda Paga,Checkout,4,387
+2024-04-01,Búsqueda Paga,Compra,5,110
+2024-04-01,Email,Visitas,1,1251
+2024-04-01,Email,Vista de producto,2,648
+2024-04-01,Email,Carrito,3,151
+2024-04-01,Email,Checkout,4,83
+2024-04-01,Email,Compra,5,63
+2024-04-01,Orgánico,Visitas,1,5056
+2024-04-01,Orgánico,Vista de producto,2,2687
+2024-04-01,Orgánico,Carrito,3,664
+2024-04-01,Orgánico,Checkout,4,369
+2024-04-01,Orgánico,Compra,5,151
+2024-04-01,Pago Social,Visitas,1,8947
+2024-04-01,Pago Social,Vista de producto,2,4679
+2024-04-01,Pago Social,Carrito,3,1079
+2024-04-01,Pago Social,Checkout,4,642
+2024-04-01,Pago Social,Compra,5,151
+2024-04-01,Referidos,Visitas,1,1412
+2024-04-01,Referidos,Vista de producto,2,728
+2024-04-01,Referidos,Carrito,3,178
+2024-04-01,Referidos,Checkout,4,99
+2024-04-01,Referidos,Compra,5,54
+2024-05-01,Búsqueda Paga,Visitas,1,5584
+2024-05-01,Búsqueda Paga,Vista de producto,2,2882
+2024-05-01,Búsqueda Paga,Carrito,3,666
+2024-05-01,Búsqueda Paga,Checkout,4,389
+2024-05-01,Búsqueda Paga,Compra,5,133
+2024-05-01,Email,Visitas,1,1028
+2024-05-01,Email,Vista de producto,2,549
+2024-05-01,Email,Carrito,3,136
+2024-05-01,Email,Checkout,4,78
+2024-05-01,Email,Compra,5,55
+2024-05-01,Orgánico,Visitas,1,5555
+2024-05-01,Orgánico,Vista de producto,2,2830
+2024-05-01,Orgánico,Carrito,3,701
+2024-05-01,Orgánico,Checkout,4,403
+2024-05-01,Orgánico,Compra,5,149
+2024-05-01,Pago Social,Visitas,1,7272
+2024-05-01,Pago Social,Vista de producto,2,3882
+2024-05-01,Pago Social,Carrito,3,930
+2024-05-01,Pago Social,Checkout,4,542
+2024-05-01,Pago Social,Compra,5,115
+2024-05-01,Referidos,Visitas,1,1447
+2024-05-01,Referidos,Vista de producto,2,774
+2024-05-01,Referidos,Carrito,3,191
+2024-05-01,Referidos,Checkout,4,105
+2024-05-01,Referidos,Compra,5,63
+2024-06-01,Búsqueda Paga,Visitas,1,5440
+2024-06-01,Búsqueda Paga,Vista de producto,2,2807
+2024-06-01,Búsqueda Paga,Carrito,3,700
+2024-06-01,Búsqueda Paga,Checkout,4,412
+2024-06-01,Búsqueda Paga,Compra,5,129
+2024-06-01,Email,Visitas,1,1786
+2024-06-01,Email,Vista de producto,2,935
+2024-06-01,Email,Carrito,3,218
+2024-06-01,Email,Checkout,4,133
+2024-06-01,Email,Compra,5,91
+2024-06-01,Orgánico,Visitas,1,6107
+2024-06-01,Orgánico,Vista de producto,2,3173
+2024-06-01,Orgánico,Carrito,3,749
+2024-06-01,Orgánico,Checkout,4,446
+2024-06-01,Orgánico,Compra,5,161
+2024-06-01,Pago Social,Visitas,1,8896
+2024-06-01,Pago Social,Vista de producto,2,4744
+2024-06-01,Pago Social,Carrito,3,1163
+2024-06-01,Pago Social,Checkout,4,703
+2024-06-01,Pago Social,Compra,5,145
+2024-06-01,Referidos,Visitas,1,1459
+2024-06-01,Referidos,Vista de producto,2,760
+2024-06-01,Referidos,Carrito,3,174
+2024-06-01,Referidos,Checkout,4,102
+2024-06-01,Referidos,Compra,5,58
+2024-07-01,Búsqueda Paga,Visitas,1,4908
+2024-07-01,Búsqueda Paga,Vista de producto,2,2618
+2024-07-01,Búsqueda Paga,Carrito,3,612
+2024-07-01,Búsqueda Paga,Checkout,4,339
+2024-07-01,Búsqueda Paga,Compra,5,127
+2024-07-01,Email,Visitas,1,1346
+2024-07-01,Email,Vista de producto,2,695
+2024-07-01,Email,Carrito,3,168
+2024-07-01,Email,Checkout,4,95
+2024-07-01,Email,Compra,5,75
+2024-07-01,Orgánico,Visitas,1,6105
+2024-07-01,Orgánico,Vista de producto,2,3187
+2024-07-01,Orgánico,Carrito,3,727
+2024-07-01,Orgánico,Checkout,4,423
+2024-07-01,Orgánico,Compra,5,174
+2024-07-01,Pago Social,Visitas,1,7846
+2024-07-01,Pago Social,Vista de producto,2,4148
+2024-07-01,Pago Social,Carrito,3,1000
+2024-07-01,Pago Social,Checkout,4,555
+2024-07-01,Pago Social,Compra,5,127
+2024-07-01,Referidos,Visitas,1,1290
+2024-07-01,Referidos,Vista de producto,2,686
+2024-07-01,Referidos,Carrito,3,163
+2024-07-01,Referidos,Checkout,4,97
+2024-07-01,Referidos,Compra,5,52
+2024-08-01,Búsqueda Paga,Visitas,1,5983
+2024-08-01,Búsqueda Paga,Vista de producto,2,3141
+2024-08-01,Búsqueda Paga,Carrito,3,716
+2024-08-01,Búsqueda Paga,Checkout,4,432
+2024-08-01,Búsqueda Paga,Compra,5,155
+2024-08-01,Email,Visitas,1,1506
+2024-08-01,Email,Vista de producto,2,770
+2024-08-01,Email,Carrito,3,187
+2024-08-01,Email,Checkout,4,109
+2024-08-01,Email,Compra,5,82
+2024-08-01,Orgánico,Visitas,1,7212
+2024-08-01,Orgánico,Vista de producto,2,3781
+2024-08-01,Orgánico,Carrito,3,873
+2024-08-01,Orgánico,Checkout,4,490
+2024-08-01,Orgánico,Compra,5,198
+2024-08-01,Pago Social,Visitas,1,9668
+2024-08-01,Pago Social,Vista de producto,2,4897
+2024-08-01,Pago Social,Carrito,3,1136
+2024-08-01,Pago Social,Checkout,4,648
+2024-08-01,Pago Social,Compra,5,150
+2024-08-01,Referidos,Visitas,1,1290
+2024-08-01,Referidos,Vista de producto,2,661
+2024-08-01,Referidos,Carrito,3,165
+2024-08-01,Referidos,Checkout,4,97
+2024-08-01,Referidos,Compra,5,55
+2024-09-01,Búsqueda Paga,Visitas,1,5282
+2024-09-01,Búsqueda Paga,Vista de producto,2,2760
+2024-09-01,Búsqueda Paga,Carrito,3,663
+2024-09-01,Búsqueda Paga,Checkout,4,386
+2024-09-01,Búsqueda Paga,Compra,5,123
+2024-09-01,Email,Visitas,1,1707
+2024-09-01,Email,Vista de producto,2,887
+2024-09-01,Email,Carrito,3,223
+2024-09-01,Email,Checkout,4,127
+2024-09-01,Email,Compra,5,85
+2024-09-01,Orgánico,Visitas,1,5988
+2024-09-01,Orgánico,Vista de producto,2,3058
+2024-09-01,Orgánico,Carrito,3,739
+2024-09-01,Orgánico,Checkout,4,412
+2024-09-01,Orgánico,Compra,5,173
+2024-09-01,Pago Social,Visitas,1,9594
+2024-09-01,Pago Social,Vista de producto,2,5025
+2024-09-01,Pago Social,Carrito,3,1218
+2024-09-01,Pago Social,Checkout,4,699
+2024-09-01,Pago Social,Compra,5,142
+2024-09-01,Referidos,Visitas,1,1292
+2024-09-01,Referidos,Vista de producto,2,680
+2024-09-01,Referidos,Carrito,3,167
+2024-09-01,Referidos,Checkout,4,99
+2024-09-01,Referidos,Compra,5,51
+2024-10-01,Búsqueda Paga,Visitas,1,5482
+2024-10-01,Búsqueda Paga,Vista de producto,2,2863
+2024-10-01,Búsqueda Paga,Carrito,3,661
+2024-10-01,Búsqueda Paga,Checkout,4,372
+2024-10-01,Búsqueda Paga,Compra,5,137
+2024-10-01,Email,Visitas,1,1537
+2024-10-01,Email,Vista de producto,2,811
+2024-10-01,Email,Carrito,3,198
+2024-10-01,Email,Checkout,4,111
+2024-10-01,Email,Compra,5,86
+2024-10-01,Orgánico,Visitas,1,5574
+2024-10-01,Orgánico,Vista de producto,2,2825
+2024-10-01,Orgánico,Carrito,3,705
+2024-10-01,Orgánico,Checkout,4,404
+2024-10-01,Orgánico,Compra,5,168
+2024-10-01,Pago Social,Visitas,1,9518
+2024-10-01,Pago Social,Vista de producto,2,4896
+2024-10-01,Pago Social,Carrito,3,1127
+2024-10-01,Pago Social,Checkout,4,631
+2024-10-01,Pago Social,Compra,5,150
+2024-10-01,Referidos,Visitas,1,1642
+2024-10-01,Referidos,Vista de producto,2,836
+2024-10-01,Referidos,Carrito,3,205
+2024-10-01,Referidos,Checkout,4,116
+2024-10-01,Referidos,Compra,5,65
+2024-11-01,Búsqueda Paga,Visitas,1,10506
+2024-11-01,Búsqueda Paga,Vista de producto,2,5389
+2024-11-01,Búsqueda Paga,Carrito,3,1323
+2024-11-01,Búsqueda Paga,Checkout,4,743
+2024-11-01,Búsqueda Paga,Compra,5,235
+2024-11-01,Email,Visitas,1,2524
+2024-11-01,Email,Vista de producto,2,1319
+2024-11-01,Email,Carrito,3,309
+2024-11-01,Email,Checkout,4,178
+2024-11-01,Email,Compra,5,125
+2024-11-01,Orgánico,Visitas,1,9972
+2024-11-01,Orgánico,Vista de producto,2,5320
+2024-11-01,Orgánico,Carrito,3,1280
+2024-11-01,Orgánico,Checkout,4,773
+2024-11-01,Orgánico,Compra,5,301
+2024-11-01,Pago Social,Visitas,1,16423
+2024-11-01,Pago Social,Vista de producto,2,8650
+2024-11-01,Pago Social,Carrito,3,2115
+2024-11-01,Pago Social,Checkout,4,1288
+2024-11-01,Pago Social,Compra,5,251
+2024-11-01,Referidos,Visitas,1,3219
+2024-11-01,Referidos,Vista de producto,2,1691
+2024-11-01,Referidos,Carrito,3,405
+2024-11-01,Referidos,Checkout,4,229
+2024-11-01,Referidos,Compra,5,129
+2024-12-01,Búsqueda Paga,Visitas,1,10549
+2024-12-01,Búsqueda Paga,Vista de producto,2,5409
+2024-12-01,Búsqueda Paga,Carrito,3,1330
+2024-12-01,Búsqueda Paga,Checkout,4,749
+2024-12-01,Búsqueda Paga,Compra,5,258
+2024-12-01,Email,Visitas,1,2218
+2024-12-01,Email,Vista de producto,2,1146
+2024-12-01,Email,Carrito,3,277
+2024-12-01,Email,Checkout,4,160
+2024-12-01,Email,Compra,5,114
+2024-12-01,Orgánico,Visitas,1,12008
+2024-12-01,Orgánico,Vista de producto,2,6386
+2024-12-01,Orgánico,Carrito,3,1463
+2024-12-01,Orgánico,Checkout,4,821
+2024-12-01,Orgánico,Compra,5,322
+2024-12-01,Pago Social,Visitas,1,16077
+2024-12-01,Pago Social,Vista de producto,2,8502
+2024-12-01,Pago Social,Carrito,3,2064
+2024-12-01,Pago Social,Checkout,4,1234
+2024-12-01,Pago Social,Compra,5,257
+2024-12-01,Referidos,Visitas,1,2395
+2024-12-01,Referidos,Vista de producto,2,1256
+2024-12-01,Referidos,Carrito,3,309
+2024-12-01,Referidos,Checkout,4,173
+2024-12-01,Referidos,Compra,5,100
+2025-01-01,Búsqueda Paga,Visitas,1,5441
+2025-01-01,Búsqueda Paga,Vista de producto,2,2868
+2025-01-01,Búsqueda Paga,Carrito,3,692
+2025-01-01,Búsqueda Paga,Checkout,4,409
+2025-01-01,Búsqueda Paga,Compra,5,122
+2025-01-01,Email,Visitas,1,1744
+2025-01-01,Email,Vista de producto,2,901
+2025-01-01,Email,Carrito,3,227
+2025-01-01,Email,Checkout,4,135
+2025-01-01,Email,Compra,5,91
+2025-01-01,Orgánico,Visitas,1,5083
+2025-01-01,Orgánico,Vista de producto,2,2658
+2025-01-01,Orgánico,Carrito,3,654
+2025-01-01,Orgánico,Checkout,4,362
+2025-01-01,Orgánico,Compra,5,146
+2025-01-01,Pago Social,Visitas,1,9079
+2025-01-01,Pago Social,Vista de producto,2,4763
+2025-01-01,Pago Social,Carrito,3,1171
+2025-01-01,Pago Social,Checkout,4,645
+2025-01-01,Pago Social,Compra,5,135
+2025-01-01,Referidos,Visitas,1,1161
+2025-01-01,Referidos,Vista de producto,2,594
+2025-01-01,Referidos,Carrito,3,139
+2025-01-01,Referidos,Checkout,4,83
+2025-01-01,Referidos,Compra,5,50
+2025-02-01,Búsqueda Paga,Visitas,1,4610
+2025-02-01,Búsqueda Paga,Vista de producto,2,2427
+2025-02-01,Búsqueda Paga,Carrito,3,600
+2025-02-01,Búsqueda Paga,Checkout,4,353
+2025-02-01,Búsqueda Paga,Compra,5,111
+2025-02-01,Email,Visitas,1,1073
+2025-02-01,Email,Vista de producto,2,550
+2025-02-01,Email,Carrito,3,131
+2025-02-01,Email,Checkout,4,74
+2025-02-01,Email,Compra,5,53
+2025-02-01,Orgánico,Visitas,1,4921
+2025-02-01,Orgánico,Vista de producto,2,2624
+2025-02-01,Orgánico,Carrito,3,617
+2025-02-01,Orgánico,Checkout,4,366
+2025-02-01,Orgánico,Compra,5,147
+2025-02-01,Pago Social,Visitas,1,8003
+2025-02-01,Pago Social,Vista de producto,2,4095
+2025-02-01,Pago Social,Carrito,3,940
+2025-02-01,Pago Social,Checkout,4,525
+2025-02-01,Pago Social,Compra,5,120
+2025-02-01,Referidos,Visitas,1,1138
+2025-02-01,Referidos,Vista de producto,2,575
+2025-02-01,Referidos,Carrito,3,133
+2025-02-01,Referidos,Checkout,4,77
+2025-02-01,Referidos,Compra,5,47
+2025-03-01,Búsqueda Paga,Visitas,1,6427
+2025-03-01,Búsqueda Paga,Vista de producto,2,3346
+2025-03-01,Búsqueda Paga,Carrito,3,772
+2025-03-01,Búsqueda Paga,Checkout,4,465
+2025-03-01,Búsqueda Paga,Compra,5,150
+2025-03-01,Email,Visitas,1,1147
+2025-03-01,Email,Vista de producto,2,595
+2025-03-01,Email,Carrito,3,143
+2025-03-01,Email,Checkout,4,80
+2025-03-01,Email,Compra,5,64
+2025-03-01,Orgánico,Visitas,1,6176
+2025-03-01,Orgánico,Vista de producto,2,3215
+2025-03-01,Orgánico,Carrito,3,802
+2025-03-01,Orgánico,Checkout,4,444
+2025-03-01,Orgánico,Compra,5,176
+2025-03-01,Pago Social,Visitas,1,10884
+2025-03-01,Pago Social,Vista de producto,2,5789
+2025-03-01,Pago Social,Carrito,3,1397
+2025-03-01,Pago Social,Checkout,4,835
+2025-03-01,Pago Social,Compra,5,180
+2025-03-01,Referidos,Visitas,1,1607
+2025-03-01,Referidos,Vista de producto,2,845
+2025-03-01,Referidos,Carrito,3,206
+2025-03-01,Referidos,Checkout,4,116
+2025-03-01,Referidos,Compra,5,65
+2025-04-01,Búsqueda Paga,Visitas,1,5922
+2025-04-01,Búsqueda Paga,Vista de producto,2,3111
+2025-04-01,Búsqueda Paga,Carrito,3,722
+2025-04-01,Búsqueda Paga,Checkout,4,434
+2025-04-01,Búsqueda Paga,Compra,5,143
+2025-04-01,Email,Visitas,1,1684
+2025-04-01,Email,Vista de producto,2,896
+2025-04-01,Email,Carrito,3,219
+2025-04-01,Email,Checkout,4,131
+2025-04-01,Email,Compra,5,89
+2025-04-01,Orgánico,Visitas,1,7747
+2025-04-01,Orgánico,Vista de producto,2,3924
+2025-04-01,Orgánico,Carrito,3,986
+2025-04-01,Orgánico,Checkout,4,547
+2025-04-01,Orgánico,Compra,5,208
+2025-04-01,Pago Social,Visitas,1,9806
+2025-04-01,Pago Social,Vista de producto,2,5128
+2025-04-01,Pago Social,Carrito,3,1238
+2025-04-01,Pago Social,Checkout,4,684
+2025-04-01,Pago Social,Compra,5,165
+2025-04-01,Referidos,Visitas,1,1697
+2025-04-01,Referidos,Vista de producto,2,905
+2025-04-01,Referidos,Carrito,3,222
+2025-04-01,Referidos,Checkout,4,125
+2025-04-01,Referidos,Compra,5,66
+2025-05-01,Búsqueda Paga,Visitas,1,6414
+2025-05-01,Búsqueda Paga,Vista de producto,2,3323
+2025-05-01,Búsqueda Paga,Carrito,3,836
+2025-05-01,Búsqueda Paga,Checkout,4,494
+2025-05-01,Búsqueda Paga,Compra,5,148
+2025-05-01,Email,Visitas,1,1417
+2025-05-01,Email,Vista de producto,2,739
+2025-05-01,Email,Carrito,3,183
+2025-05-01,Email,Checkout,4,109
+2025-05-01,Email,Compra,5,78
+2025-05-01,Orgánico,Visitas,1,7683
+2025-05-01,Orgánico,Vista de producto,2,4005
+2025-05-01,Orgánico,Carrito,3,1007
+2025-05-01,Orgánico,Checkout,4,592
+2025-05-01,Orgánico,Compra,5,212
+2025-05-01,Pago Social,Visitas,1,11305
+2025-05-01,Pago Social,Vista de producto,2,5863
+2025-05-01,Pago Social,Carrito,3,1465
+2025-05-01,Pago Social,Checkout,4,837
+2025-05-01,Pago Social,Compra,5,183
+2025-05-01,Referidos,Visitas,1,1616
+2025-05-01,Referidos,Vista de producto,2,818
+2025-05-01,Referidos,Carrito,3,202
+2025-05-01,Referidos,Checkout,4,118
+2025-05-01,Referidos,Compra,5,70
+2025-06-01,Búsqueda Paga,Visitas,1,6602
+2025-06-01,Búsqueda Paga,Vista de producto,2,3468
+2025-06-01,Búsqueda Paga,Carrito,3,838
+2025-06-01,Búsqueda Paga,Checkout,4,494
+2025-06-01,Búsqueda Paga,Compra,5,152
+2025-06-01,Email,Visitas,1,1283
+2025-06-01,Email,Vista de producto,2,656
+2025-06-01,Email,Carrito,3,151
+2025-06-01,Email,Checkout,4,86
+2025-06-01,Email,Compra,5,72
+2025-06-01,Orgánico,Visitas,1,7048
+2025-06-01,Orgánico,Vista de producto,2,3698
+2025-06-01,Orgánico,Carrito,3,903
+2025-06-01,Orgánico,Checkout,4,509
+2025-06-01,Orgánico,Compra,5,193
+2025-06-01,Pago Social,Visitas,1,10138
+2025-06-01,Pago Social,Vista de producto,2,5344
+2025-06-01,Pago Social,Carrito,3,1244
+2025-06-01,Pago Social,Checkout,4,720
+2025-06-01,Pago Social,Compra,5,167
+2025-06-01,Referidos,Visitas,1,1531
+2025-06-01,Referidos,Vista de producto,2,810
+2025-06-01,Referidos,Carrito,3,185
+2025-06-01,Referidos,Checkout,4,106
+2025-06-01,Referidos,Compra,5,67
+2025-07-01,Búsqueda Paga,Visitas,1,6389
+2025-07-01,Búsqueda Paga,Vista de producto,2,3239
+2025-07-01,Búsqueda Paga,Carrito,3,802
+2025-07-01,Búsqueda Paga,Checkout,4,462
+2025-07-01,Búsqueda Paga,Compra,5,161
+2025-07-01,Email,Visitas,1,1893
+2025-07-01,Email,Vista de producto,2,982
+2025-07-01,Email,Carrito,3,224
+2025-07-01,Email,Checkout,4,134
+2025-07-01,Email,Compra,5,91
+2025-07-01,Orgánico,Visitas,1,8055
+2025-07-01,Orgánico,Vista de producto,2,4139
+2025-07-01,Orgánico,Carrito,3,977
+2025-07-01,Orgánico,Checkout,4,554
+2025-07-01,Orgánico,Compra,5,219
+2025-07-01,Pago Social,Visitas,1,9983
+2025-07-01,Pago Social,Vista de producto,2,5196
+2025-07-01,Pago Social,Carrito,3,1201
+2025-07-01,Pago Social,Checkout,4,672
+2025-07-01,Pago Social,Compra,5,166
+2025-07-01,Referidos,Visitas,1,2116
+2025-07-01,Referidos,Vista de producto,2,1068
+2025-07-01,Referidos,Carrito,3,258
+2025-07-01,Referidos,Checkout,4,153
+2025-07-01,Referidos,Compra,5,89
+2025-08-01,Búsqueda Paga,Visitas,1,6725
+2025-08-01,Búsqueda Paga,Vista de producto,2,3480
+2025-08-01,Búsqueda Paga,Carrito,3,857
+2025-08-01,Búsqueda Paga,Checkout,4,475
+2025-08-01,Búsqueda Paga,Compra,5,163
+2025-08-01,Email,Visitas,1,1755
+2025-08-01,Email,Vista de producto,2,920
+2025-08-01,Email,Carrito,3,230
+2025-08-01,Email,Checkout,4,137
+2025-08-01,Email,Compra,5,92
+2025-08-01,Orgánico,Visitas,1,8116
+2025-08-01,Orgánico,Vista de producto,2,4124
+2025-08-01,Orgánico,Carrito,3,996
+2025-08-01,Orgánico,Checkout,4,573
+2025-08-01,Orgánico,Compra,5,233
+2025-08-01,Pago Social,Visitas,1,12627
+2025-08-01,Pago Social,Vista de producto,2,6410
+2025-08-01,Pago Social,Carrito,3,1471
+2025-08-01,Pago Social,Checkout,4,825
+2025-08-01,Pago Social,Compra,5,201
+2025-08-01,Referidos,Visitas,1,1750
+2025-08-01,Referidos,Vista de producto,2,913
+2025-08-01,Referidos,Carrito,3,213
+2025-08-01,Referidos,Checkout,4,126
+2025-08-01,Referidos,Compra,5,76
+2025-09-01,Búsqueda Paga,Visitas,1,6545
+2025-09-01,Búsqueda Paga,Vista de producto,2,3399
+2025-09-01,Búsqueda Paga,Carrito,3,797
+2025-09-01,Búsqueda Paga,Checkout,4,465
+2025-09-01,Búsqueda Paga,Compra,5,148
+2025-09-01,Email,Visitas,1,2024
+2025-09-01,Email,Vista de producto,2,1061
+2025-09-01,Email,Carrito,3,260
+2025-09-01,Email,Checkout,4,153
+2025-09-01,Email,Compra,5,106
+2025-09-01,Orgánico,Visitas,1,7318
+2025-09-01,Orgánico,Vista de producto,2,3825
+2025-09-01,Orgánico,Carrito,3,917
+2025-09-01,Orgánico,Checkout,4,517
+2025-09-01,Orgánico,Compra,5,198
+2025-09-01,Pago Social,Visitas,1,10723
+2025-09-01,Pago Social,Vista de producto,2,5691
+2025-09-01,Pago Social,Carrito,3,1420
+2025-09-01,Pago Social,Checkout,4,808
+2025-09-01,Pago Social,Compra,5,177
+2025-09-01,Referidos,Visitas,1,1614
+2025-09-01,Referidos,Vista de producto,2,847
+2025-09-01,Referidos,Carrito,3,210
+2025-09-01,Referidos,Checkout,4,126
+2025-09-01,Referidos,Compra,5,68
+2025-10-01,Búsqueda Paga,Visitas,1,6290
+2025-10-01,Búsqueda Paga,Vista de producto,2,3263
+2025-10-01,Búsqueda Paga,Carrito,3,814
+2025-10-01,Búsqueda Paga,Checkout,4,465
+2025-10-01,Búsqueda Paga,Compra,5,160
+2025-10-01,Email,Visitas,1,1504
+2025-10-01,Email,Vista de producto,2,790
+2025-10-01,Email,Carrito,3,198
+2025-10-01,Email,Checkout,4,117
+2025-10-01,Email,Compra,5,77
+2025-10-01,Orgánico,Visitas,1,8234
+2025-10-01,Orgánico,Vista de producto,2,4193
+2025-10-01,Orgánico,Carrito,3,1050
+2025-10-01,Orgánico,Checkout,4,585
+2025-10-01,Orgánico,Compra,5,224
+2025-10-01,Pago Social,Visitas,1,10259
+2025-10-01,Pago Social,Vista de producto,2,5185
+2025-10-01,Pago Social,Carrito,3,1251
+2025-10-01,Pago Social,Checkout,4,728
+2025-10-01,Pago Social,Compra,5,156
+2025-10-01,Referidos,Visitas,1,1846
+2025-10-01,Referidos,Vista de producto,2,956
+2025-10-01,Referidos,Carrito,3,223
+2025-10-01,Referidos,Checkout,4,128
+2025-10-01,Referidos,Compra,5,74
+2025-11-01,Búsqueda Paga,Visitas,1,12257
+2025-11-01,Búsqueda Paga,Vista de producto,2,6447
+2025-11-01,Búsqueda Paga,Carrito,3,1617
+2025-11-01,Búsqueda Paga,Checkout,4,981
+2025-11-01,Búsqueda Paga,Compra,5,279
+2025-11-01,Email,Visitas,1,3078
+2025-11-01,Email,Vista de producto,2,1606
+2025-11-01,Email,Carrito,3,399
+2025-11-01,Email,Checkout,4,221
+2025-11-01,Email,Compra,5,152
+2025-11-01,Orgánico,Visitas,1,14226
+2025-11-01,Orgánico,Vista de producto,2,7256
+2025-11-01,Orgánico,Carrito,3,1773
+2025-11-01,Orgánico,Checkout,4,992
+2025-11-01,Orgánico,Compra,5,390
+2025-11-01,Pago Social,Visitas,1,18544
+2025-11-01,Pago Social,Vista de producto,2,9680
+2025-11-01,Pago Social,Carrito,3,2369
+2025-11-01,Pago Social,Checkout,4,1350
+2025-11-01,Pago Social,Compra,5,306
+2025-11-01,Referidos,Visitas,1,3206
+2025-11-01,Referidos,Vista de producto,2,1655
+2025-11-01,Referidos,Carrito,3,414
+2025-11-01,Referidos,Checkout,4,244
+2025-11-01,Referidos,Compra,5,121
+2025-12-01,Búsqueda Paga,Visitas,1,12221
+2025-12-01,Búsqueda Paga,Vista de producto,2,6508
+2025-12-01,Búsqueda Paga,Carrito,3,1604
+2025-12-01,Búsqueda Paga,Checkout,4,901
+2025-12-01,Búsqueda Paga,Compra,5,279
+2025-12-01,Email,Visitas,1,3198
+2025-12-01,Email,Vista de producto,2,1664
+2025-12-01,Email,Carrito,3,384
+2025-12-01,Email,Checkout,4,230
+2025-12-01,Email,Compra,5,172
+2025-12-01,Orgánico,Visitas,1,13976
+2025-12-01,Orgánico,Vista de producto,2,7451
+2025-12-01,Orgánico,Carrito,3,1786
+2025-12-01,Orgánico,Checkout,4,1024
+2025-12-01,Orgánico,Compra,5,402
+2025-12-01,Pago Social,Visitas,1,21473
+2025-12-01,Pago Social,Vista de producto,2,11076
+2025-12-01,Pago Social,Carrito,3,2765
+2025-12-01,Pago Social,Checkout,4,1525
+2025-12-01,Pago Social,Compra,5,346
+2025-12-01,Referidos,Visitas,1,2972
+2025-12-01,Referidos,Vista de producto,2,1512
+2025-12-01,Referidos,Carrito,3,352
+2025-12-01,Referidos,Checkout,4,213
+2025-12-01,Referidos,Compra,5,115
+2026-01-01,Búsqueda Paga,Visitas,1,6472
+2026-01-01,Búsqueda Paga,Vista de producto,2,3294
+2026-01-01,Búsqueda Paga,Carrito,3,764
+2026-01-01,Búsqueda Paga,Checkout,4,440
+2026-01-01,Búsqueda Paga,Compra,5,157
+2026-01-01,Email,Visitas,1,1791
+2026-01-01,Email,Vista de producto,2,923
+2026-01-01,Email,Carrito,3,227
+2026-01-01,Email,Checkout,4,132
+2026-01-01,Email,Compra,5,98
+2026-01-01,Orgánico,Visitas,1,6449
+2026-01-01,Orgánico,Vista de producto,2,3329
+2026-01-01,Orgánico,Carrito,3,759
+2026-01-01,Orgánico,Checkout,4,425
+2026-01-01,Orgánico,Compra,5,183
+2026-01-01,Pago Social,Visitas,1,10588
+2026-01-01,Pago Social,Vista de producto,2,5422
+2026-01-01,Pago Social,Carrito,3,1298
+2026-01-01,Pago Social,Checkout,4,732
+2026-01-01,Pago Social,Compra,5,176
+2026-01-01,Referidos,Visitas,1,1604
+2026-01-01,Referidos,Vista de producto,2,820
+2026-01-01,Referidos,Carrito,3,202
+2026-01-01,Referidos,Checkout,4,120
+2026-01-01,Referidos,Compra,5,62
+2026-02-01,Búsqueda Paga,Visitas,1,5439
+2026-02-01,Búsqueda Paga,Vista de producto,2,2795
+2026-02-01,Búsqueda Paga,Carrito,3,699
+2026-02-01,Búsqueda Paga,Checkout,4,425
+2026-02-01,Búsqueda Paga,Compra,5,136
+2026-02-01,Email,Visitas,1,1454
+2026-02-01,Email,Vista de producto,2,751
+2026-02-01,Email,Carrito,3,187
+2026-02-01,Email,Checkout,4,110
+2026-02-01,Email,Compra,5,78
+2026-02-01,Orgánico,Visitas,1,5325
+2026-02-01,Orgánico,Vista de producto,2,2758
+2026-02-01,Orgánico,Carrito,3,684
+2026-02-01,Orgánico,Checkout,4,400
+2026-02-01,Orgánico,Compra,5,153
+2026-02-01,Pago Social,Visitas,1,8045
+2026-02-01,Pago Social,Vista de producto,2,4223
+2026-02-01,Pago Social,Carrito,3,1038
+2026-02-01,Pago Social,Checkout,4,623
+2026-02-01,Pago Social,Compra,5,136
+2026-02-01,Referidos,Visitas,1,1372
+2026-02-01,Referidos,Vista de producto,2,703
+2026-02-01,Referidos,Carrito,3,161
+2026-02-01,Referidos,Checkout,4,94
+2026-02-01,Referidos,Compra,5,55
+2026-03-01,Búsqueda Paga,Visitas,1,7489
+2026-03-01,Búsqueda Paga,Vista de producto,2,3915
+2026-03-01,Búsqueda Paga,Carrito,3,917
+2026-03-01,Búsqueda Paga,Checkout,4,536
+2026-03-01,Búsqueda Paga,Compra,5,168
+2026-03-01,Email,Visitas,1,2106
+2026-03-01,Email,Vista de producto,2,1113
+2026-03-01,Email,Carrito,3,271
+2026-03-01,Email,Checkout,4,162
+2026-03-01,Email,Compra,5,106
+2026-03-01,Orgánico,Visitas,1,8813
+2026-03-01,Orgánico,Vista de producto,2,4504
+2026-03-01,Orgánico,Carrito,3,1112
+2026-03-01,Orgánico,Checkout,4,671
+2026-03-01,Orgánico,Compra,5,234
+2026-03-01,Pago Social,Visitas,1,14597
+2026-03-01,Pago Social,Vista de producto,2,7765
+2026-03-01,Pago Social,Carrito,3,1956
+2026-03-01,Pago Social,Checkout,4,1125
+2026-03-01,Pago Social,Compra,5,246
+2026-03-01,Referidos,Visitas,1,2096
+2026-03-01,Referidos,Vista de producto,2,1106
+2026-03-01,Referidos,Carrito,3,269
+2026-03-01,Referidos,Checkout,4,150
+2026-03-01,Referidos,Compra,5,84
+2026-04-01,Búsqueda Paga,Visitas,1,7759
+2026-04-01,Búsqueda Paga,Vista de producto,2,4116
+2026-04-01,Búsqueda Paga,Carrito,3,979
+2026-04-01,Búsqueda Paga,Checkout,4,541
+2026-04-01,Búsqueda Paga,Compra,5,189
+2026-04-01,Email,Visitas,1,1692
+2026-04-01,Email,Vista de producto,2,873
+2026-04-01,Email,Carrito,3,207
+2026-04-01,Email,Checkout,4,117
+2026-04-01,Email,Compra,5,92
+2026-04-01,Orgánico,Visitas,1,8613
+2026-04-01,Orgánico,Vista de producto,2,4558
+2026-04-01,Orgánico,Carrito,3,1122
+2026-04-01,Orgánico,Checkout,4,622
+2026-04-01,Orgánico,Compra,5,246
+2026-04-01,Pago Social,Visitas,1,12854
+2026-04-01,Pago Social,Vista de producto,2,6534
+2026-04-01,Pago Social,Carrito,3,1543
+2026-04-01,Pago Social,Checkout,4,885
+2026-04-01,Pago Social,Compra,5,199
+2026-04-01,Referidos,Visitas,1,2056
+2026-04-01,Referidos,Vista de producto,2,1100
+2026-04-01,Referidos,Carrito,3,261
+2026-04-01,Referidos,Checkout,4,147
+2026-04-01,Referidos,Compra,5,88
+2026-05-01,Búsqueda Paga,Visitas,1,7677
+2026-05-01,Búsqueda Paga,Vista de producto,2,3943
+2026-05-01,Búsqueda Paga,Carrito,3,906
+2026-05-01,Búsqueda Paga,Checkout,4,504
+2026-05-01,Búsqueda Paga,Compra,5,172
+2026-05-01,Email,Visitas,1,1851
+2026-05-01,Email,Vista de producto,2,968
+2026-05-01,Email,Carrito,3,242
+2026-05-01,Email,Checkout,4,141
+2026-05-01,Email,Compra,5,100
+2026-05-01,Orgánico,Visitas,1,8763
+2026-05-01,Orgánico,Vista de producto,2,4460
+2026-05-01,Orgánico,Carrito,3,1045
+2026-05-01,Orgánico,Checkout,4,599
+2026-05-01,Orgánico,Compra,5,264
+2026-05-01,Pago Social,Visitas,1,13871
+2026-05-01,Pago Social,Vista de producto,2,7177
+2026-05-01,Pago Social,Carrito,3,1804
+2026-05-01,Pago Social,Checkout,4,1047
+2026-05-01,Pago Social,Compra,5,211
+2026-05-01,Referidos,Visitas,1,2169
+2026-05-01,Referidos,Vista de producto,2,1099
+2026-05-01,Referidos,Carrito,3,260
+2026-05-01,Referidos,Checkout,4,145
+2026-05-01,Referidos,Compra,5,86
+2026-06-01,Búsqueda Paga,Visitas,1,7693
+2026-06-01,Búsqueda Paga,Vista de producto,2,4026
+2026-06-01,Búsqueda Paga,Carrito,3,926
+2026-06-01,Búsqueda Paga,Checkout,4,537
+2026-06-01,Búsqueda Paga,Compra,5,174
+2026-06-01,Email,Visitas,1,1799
+2026-06-01,Email,Vista de producto,2,944
+2026-06-01,Email,Carrito,3,232
+2026-06-01,Email,Checkout,4,133
+2026-06-01,Email,Compra,5,97
+2026-06-01,Orgánico,Visitas,1,9319
+2026-06-01,Orgánico,Vista de producto,2,4710
+2026-06-01,Orgánico,Carrito,3,1178
+2026-06-01,Orgánico,Checkout,4,675
+2026-06-01,Orgánico,Compra,5,246
+2026-06-01,Pago Social,Visitas,1,14865
+2026-06-01,Pago Social,Vista de producto,2,7563
+2026-06-01,Pago Social,Carrito,3,1727
+2026-06-01,Pago Social,Checkout,4,984
+2026-06-01,Pago Social,Compra,5,224
+2026-06-01,Referidos,Visitas,1,2075
+2026-06-01,Referidos,Vista de producto,2,1094
+2026-06-01,Referidos,Carrito,3,251
+2026-06-01,Referidos,Checkout,4,144
+2026-06-01,Referidos,Compra,5,81
+2026-07-01,Búsqueda Paga,Visitas,1,7888
+2026-07-01,Búsqueda Paga,Vista de producto,2,3996
+2026-07-01,Búsqueda Paga,Carrito,3,976
+2026-07-01,Búsqueda Paga,Checkout,4,542
+2026-07-01,Búsqueda Paga,Compra,5,185
+2026-07-01,Email,Visitas,1,2014
+2026-07-01,Email,Vista de producto,2,1044
+2026-07-01,Email,Carrito,3,238
+2026-07-01,Email,Checkout,4,144
+2026-07-01,Email,Compra,5,100
+2026-07-01,Orgánico,Visitas,1,8645
+2026-07-01,Orgánico,Vista de producto,2,4362
+2026-07-01,Orgánico,Carrito,3,1023
+2026-07-01,Orgánico,Checkout,4,573
+2026-07-01,Orgánico,Compra,5,232
+2026-07-01,Pago Social,Visitas,1,14175
+2026-07-01,Pago Social,Vista de producto,2,7465
+2026-07-01,Pago Social,Carrito,3,1719
+2026-07-01,Pago Social,Checkout,4,979
+2026-07-01,Pago Social,Compra,5,218
+2026-07-01,Referidos,Visitas,1,1919
+2026-07-01,Referidos,Vista de producto,2,972
+2026-07-01,Referidos,Carrito,3,225
+2026-07-01,Referidos,Checkout,4,134
+2026-07-01,Referidos,Compra,5,77
+2026-08-01,Búsqueda Paga,Visitas,1,7627
+2026-08-01,Búsqueda Paga,Vista de producto,2,3958
+2026-08-01,Búsqueda Paga,Carrito,3,912
+2026-08-01,Búsqueda Paga,Checkout,4,551
+2026-08-01,Búsqueda Paga,Compra,5,194
+2026-08-01,Email,Visitas,1,2138
+2026-08-01,Email,Vista de producto,2,1094
+2026-08-01,Email,Carrito,3,259
+2026-08-01,Email,Checkout,4,152
+2026-08-01,Email,Compra,5,110
+2026-08-01,Orgánico,Visitas,1,9774
+2026-08-01,Orgánico,Vista de producto,2,5079
+2026-08-01,Orgánico,Carrito,3,1260
+2026-08-01,Orgánico,Checkout,4,722
+2026-08-01,Orgánico,Compra,5,260
+2026-08-01,Pago Social,Visitas,1,13138
+2026-08-01,Pago Social,Vista de producto,2,6787
+2026-08-01,Pago Social,Carrito,3,1664
+2026-08-01,Pago Social,Checkout,4,937
+2026-08-01,Pago Social,Compra,5,218
+2026-08-01,Referidos,Visitas,1,1831
+2026-08-01,Referidos,Vista de producto,2,942
+2026-08-01,Referidos,Carrito,3,216
+2026-08-01,Referidos,Checkout,4,126
+2026-08-01,Referidos,Compra,5,78
+2026-09-01,Búsqueda Paga,Visitas,1,7133
+2026-09-01,Búsqueda Paga,Vista de producto,2,3730
+2026-09-01,Búsqueda Paga,Carrito,3,879
+2026-09-01,Búsqueda Paga,Checkout,4,527
+2026-09-01,Búsqueda Paga,Compra,5,184
+2026-09-01,Email,Visitas,1,1920
+2026-09-01,Email,Vista de producto,2,978
+2026-09-01,Email,Carrito,3,232
+2026-09-01,Email,Checkout,4,129
+2026-09-01,Email,Compra,5,105
+2026-09-01,Orgánico,Visitas,1,8474
+2026-09-01,Orgánico,Vista de producto,2,4505
+2026-09-01,Orgánico,Carrito,3,1050
+2026-09-01,Orgánico,Checkout,4,605
+2026-09-01,Orgánico,Compra,5,253
+2026-09-01,Pago Social,Visitas,1,12754
+2026-09-01,Pago Social,Vista de producto,2,6521
+2026-09-01,Pago Social,Carrito,3,1547
+2026-09-01,Pago Social,Checkout,4,868
+2026-09-01,Pago Social,Compra,5,220
+2026-09-01,Referidos,Visitas,1,2287
+2026-09-01,Referidos,Vista de producto,2,1216
+2026-09-01,Referidos,Carrito,3,288
+2026-09-01,Referidos,Checkout,4,160
+2026-09-01,Referidos,Compra,5,91

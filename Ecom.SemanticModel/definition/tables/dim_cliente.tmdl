@@ -1,0 +1,125 @@
+table dim_cliente
+	lineageTag: b796dbf8-d33f-5e91-bbde-62dc36dcf338
+
+	column cliente_id
+		dataType: string
+		isKey
+		lineageTag: b69fa6df-8bc8-561c-82e5-96d15090656f
+		summarizeBy: none
+		sourceColumn: cliente_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column ciudad
+		dataType: string
+		lineageTag: 88f015cd-67f2-572c-940d-5adadf396f09
+		summarizeBy: none
+		sourceColumn: ciudad
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 4d3d0519-6285-524a-a719-0649540ee1f0
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column recencia_dias =
+			VAR u = CALCULATE ( MAX ( fact_ventas[fecha] ), fact_ventas[estado] = "Completado" )
+			RETURN IF ( ISBLANK ( u ), BLANK (), DATEDIFF ( u, DATE ( 2026, 9, 30 ), DAY ) )
+		dataType: int64
+		lineageTag: d9101520-eaf2-5f89-8e6c-604fad10af55
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column frecuencia =
+			VAR n = CALCULATE ( DISTINCTCOUNT ( fact_ventas[pedido_id] ), fact_ventas[estado] = "Completado" )
+			RETURN IF ( n = 0, BLANK (), n )
+		dataType: int64
+		lineageTag: 82420bd2-3516-52b1-a7d5-4938646516b0
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column monetario =
+			CALCULATE ( SUM ( fact_ventas[ingreso] ), fact_ventas[estado] = "Completado" )
+		dataType: double
+		lineageTag: 3d475db2-981d-50b6-ade6-22690b480b9a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column score_r =
+			VAR v = dim_cliente[recencia_dias]
+			VAR c = FILTER ( ALL ( dim_cliente ), NOT ISBLANK ( dim_cliente[recencia_dias] ) )
+			VAR p20 = PERCENTILEX.INC ( c, dim_cliente[recencia_dias], 0.2 )
+			VAR p40 = PERCENTILEX.INC ( c, dim_cliente[recencia_dias], 0.4 )
+			VAR p60 = PERCENTILEX.INC ( c, dim_cliente[recencia_dias], 0.6 )
+			VAR p80 = PERCENTILEX.INC ( c, dim_cliente[recencia_dias], 0.8 )
+			VAR s = SWITCH ( TRUE (), v <= p20, 1, v <= p40, 2, v <= p60, 3, v <= p80, 4, 5 )
+			RETURN IF ( ISBLANK ( v ), BLANK (), 6 - s )
+		dataType: int64
+		lineageTag: 4a2addbb-f1e6-55f3-a48c-b3edc0c7e29f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column score_f =
+			VAR v = dim_cliente[frecuencia]
+			VAR c = FILTER ( ALL ( dim_cliente ), NOT ISBLANK ( dim_cliente[frecuencia] ) )
+			VAR p20 = PERCENTILEX.INC ( c, dim_cliente[frecuencia], 0.2 )
+			VAR p40 = PERCENTILEX.INC ( c, dim_cliente[frecuencia], 0.4 )
+			VAR p60 = PERCENTILEX.INC ( c, dim_cliente[frecuencia], 0.6 )
+			VAR p80 = PERCENTILEX.INC ( c, dim_cliente[frecuencia], 0.8 )
+			VAR s = SWITCH ( TRUE (), v <= p20, 1, v <= p40, 2, v <= p60, 3, v <= p80, 4, 5 )
+			RETURN IF ( ISBLANK ( v ), BLANK (), s )
+		dataType: int64
+		lineageTag: f1fe5bba-b899-5c71-a551-6f9528d72692
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column score_m =
+			VAR v = dim_cliente[monetario]
+			VAR c = FILTER ( ALL ( dim_cliente ), NOT ISBLANK ( dim_cliente[monetario] ) )
+			VAR p20 = PERCENTILEX.INC ( c, dim_cliente[monetario], 0.2 )
+			VAR p40 = PERCENTILEX.INC ( c, dim_cliente[monetario], 0.4 )
+			VAR p60 = PERCENTILEX.INC ( c, dim_cliente[monetario], 0.6 )
+			VAR p80 = PERCENTILEX.INC ( c, dim_cliente[monetario], 0.8 )
+			VAR s = SWITCH ( TRUE (), v <= p20, 1, v <= p40, 2, v <= p60, 3, v <= p80, 4, 5 )
+			RETURN IF ( ISBLANK ( v ), BLANK (), s )
+		dataType: int64
+		lineageTag: 70fb507a-8310-523f-8fe1-86f21cbd7040
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column segmento_rfm =
+			VAR r = dim_cliente[score_r]
+			VAR f = dim_cliente[score_f]
+			RETURN SWITCH ( TRUE (),
+			    ISBLANK ( r ), "Sin compra",
+			    r >= 4 && f >= 4, "Campeones",
+			    r >= 3 && f >= 3, "Leales",
+			    r >= 4, "Nuevos",
+			    r <= 2 && f >= 3, "En riesgo",
+			    r <= 2, "Perdidos",
+			    "Potenciales" )
+		dataType: string
+		lineageTag: a640d769-0085-5850-822b-92f874fd278c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_cliente = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(DataPath & "dim_cliente.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"cliente_id", type text}, {"ciudad", type text}, {"region", type text}}, "en-US")
+				in
+				    Tipos

@@ -1,0 +1,53 @@
+table dim_producto
+	lineageTag: 4243f314-a4c5-55f8-8713-64faf5cd041e
+
+	column producto_id
+		dataType: string
+		isKey
+		lineageTag: cc6b6a0c-17ce-5fd6-951b-835da8b5ba7a
+		summarizeBy: none
+		sourceColumn: producto_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column producto
+		dataType: string
+		lineageTag: 7646cf0b-ae7d-56ee-bb1d-e5727ee93e8d
+		summarizeBy: none
+		sourceColumn: producto
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria
+		dataType: string
+		lineageTag: 69b65a32-ea8e-501d-b2d5-8245862270b6
+		summarizeBy: none
+		sourceColumn: categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column precio_lista
+		dataType: double
+		lineageTag: 0f12e8c8-f3fc-5e1f-ac39-22f24ea49799
+		summarizeBy: none
+		sourceColumn: precio_lista
+
+		annotation SummarizationSetBy = Automatic
+
+	column costo_unitario
+		dataType: double
+		lineageTag: e43043c5-84ca-5136-a62e-28614b10debf
+		summarizeBy: none
+		sourceColumn: costo_unitario
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_producto = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents(DataPath & "dim_producto.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"producto_id", type text}, {"producto", type text}, {"categoria", type text}, {"precio_lista", type number}, {"costo_unitario", type number}}, "en-US")
+				in
+				    Tipos

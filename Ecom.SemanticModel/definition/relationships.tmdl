@@ -1,0 +1,23 @@
+relationship cb0841c4-cb01-5090-a3c6-d0147f89a462
+	fromColumn: fact_ventas.fecha
+	toColumn: dim_calendario.fecha
+
+relationship 959aba5f-d5a5-52d4-bce6-122a115c164d
+	fromColumn: fact_ventas.cliente_id
+	toColumn: dim_cliente.cliente_id
+
+relationship bf626dc6-2562-54ef-8809-fd3b3c3cff45
+	fromColumn: fact_ventas.producto_id
+	toColumn: dim_producto.producto_id
+
+relationship 1073d77f-d015-57a2-848b-eb5af75fd7a3
+	fromColumn: fact_ventas.canal
+	toColumn: dim_canal.canal
+
+relationship b1cc7f4d-7a72-5fa1-803a-a2ce2cfb9e7e
+	fromColumn: fact_embudo.mes
+	toColumn: dim_calendario.fecha
+
+relationship 175a35ee-bd97-513a-8765-634cb7a881f6
+	fromColumn: fact_embudo.canal
+	toColumn: dim_canal.canal
